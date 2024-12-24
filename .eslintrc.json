@@ -1,0 +1,8 @@
+{
+  "extends": "dicodingacademy",
+  "languageOptions": {
+    "globals": {
+      "AudioWorkletGlobalScope": true
+    }
+  }
+}

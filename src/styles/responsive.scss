@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+  .app-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .app-bar__menu {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .app-bar__brand {
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+
+  .app-bar__navigation {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    transition: left 0.3s;
+    padding: 2rem 1rem;
+    z-index: 999;
+  }
+
+  .app-bar__navigation.open {
+    left: 0;
+  }
+
+  .app-bar__navigation ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+
+/* Tambahan untuk layar kecil */
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 1rem;
+  }
+
+  .restaurant-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .restaurant-item {
+    width: 100%;
+  }
+
+  .restaurant-item__content {
+    padding: 0.75rem;
+  }
+
+  .restaurant-item__title {
+    font-size: 1.1rem;
+  }
+}
+
+/* Khusus untuk layar sangat kecil (320px) */
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 0.5rem;
+  }
+
+  .restaurant-list {
+    margin: 0;
+  }
+
+  .restaurant-item__image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero__inner {
+    padding: 1rem;
+  }
+
+  .hero__title {
+    font-size: 1.5rem;
+  }
+
+  .hero__tagline {
+    font-size: 0.9rem;
+  }
+
+  .app-bar__brand h1 {
+    font-size: 1.2rem;
+  }
+}

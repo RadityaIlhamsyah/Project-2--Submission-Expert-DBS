@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "meta-viewport": "off",
+    "apple-touch-icons": "off",
+    "typescript-config/is-valid": "off",
+    "manifest-file-extension": "off",
+    "manifest-exists": "off"
+  }
+}
